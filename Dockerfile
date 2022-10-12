@@ -23,7 +23,7 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 # configuring remote server in dvc
-RUN dvc init --no-scm
+RUN dvc init --no-scm -f
 RUN dvc remote add -d awsstorage s3://mlops-aws-nauman/
 
 # pulling the trained model
