@@ -2,6 +2,12 @@
 Lambda wrapper
 """
 
+#import os
+#os.environ['TRANSFORMERS_CACHE'] = '/tmp/'
+
+
+
+
 import json
 from inference_onnx import ColaONNXPredictor
 
