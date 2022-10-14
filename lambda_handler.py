@@ -23,7 +23,7 @@ def lambda_handler(event, context):
 		body = json.loads(body)
 		print(f"Got the input: Nauman:  {body['sentence']}")
 		response = inferencing_instance.predict(body["sentence"])
-		response['name'] = 'Nauman'
+		#response['name'] = 'Nauman'
 		return {
 			"statusCode": 200,
 			"headers": {},
